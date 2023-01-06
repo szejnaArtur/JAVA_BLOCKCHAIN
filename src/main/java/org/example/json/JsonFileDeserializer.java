@@ -5,6 +5,7 @@ import org.example.Blockchain;
 import org.example.message.Message;
 
 import java.io.BufferedReader;
+import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.nio.file.FileSystem;
@@ -20,10 +21,10 @@ public final class JsonFileDeserializer {
     }
 
     private static BufferedReader getReader(String JSON_FILE_PATH) throws FileNotFoundException {
-        FileSystem fs = FileSystems.getDefault();
-        Path source = fs.getPath(JSON_FILE_PATH);
+//        FileSystem fs = FileSystems.getDefault();
+//        Path source = fs.getPath(JSON_FILE_PATH);
 
-        FileReader fileReader = new FileReader(source.toFile());
+        FileReader fileReader = new FileReader(new File(JSON_FILE_PATH));
         return new BufferedReader(fileReader);
     }
 

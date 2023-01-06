@@ -42,7 +42,7 @@ class Accounts {
 
     public void showAccountsInConsole() {
 
-        accounts.entrySet().stream().forEach(account -> {
+        accounts.entrySet().forEach(account -> {
             System.out.println(account.getKey() + ": " + account.getValue());
         });
 
