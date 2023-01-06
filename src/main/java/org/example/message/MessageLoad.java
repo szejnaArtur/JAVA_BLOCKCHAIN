@@ -1,9 +1,9 @@
 package org.example.message;
 
-public class MessageLoad extends Message{
+public class MessageLoad extends Message {
     private final String address;
 
-    public MessageLoad(final String type, final Integer amount, final String address ) {
+    public MessageLoad(final String type, final Integer amount, final String address) {
         super(type, amount);
         this.address = address;
     }

@@ -1,10 +1,10 @@
 package org.example.message;
 
-public class MessageTransfer extends Message{
+public class MessageTransfer extends Message {
     private final String fromAddress;
     private final String toAddress;
 
-    public MessageTransfer(final String type, final Integer amount, final String fromAddress, final String toAddress ) {
+    public MessageTransfer(final String type, final Integer amount, final String fromAddress, final String toAddress) {
         super(type, amount);
         this.fromAddress = fromAddress;
         this.toAddress = toAddress;
